@@ -1,0 +1,25 @@
+# FDS / JiT-B/16 runtime and evaluator dependencies.
+# Validated on the current server with Python 3.9.25.
+#
+# Install PyTorch first when the target server has a different NVIDIA driver.
+# The validated pair is torch 2.8.0 + CUDA 12.8 and torchvision 0.23.0.
+torch==2.8.0
+torchvision==0.23.0
+
+# Numerical and image processing
+numpy==2.0.2
+Pillow==11.3.0
+opencv-python==5.0.0.93
+
+# Model and sampling runtime
+einops==0.8.2
+tqdm==4.70.0
+
+# Online metric compatibility and independent evaluation
+torch-fidelity==0.4.0
+tensorboard==2.21.0
+matplotlib==3.9.4
+
+# Optional notebook/demo support
+jupyterlab==4.5.10
+ipykernel==6.31.0

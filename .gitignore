@@ -1,0 +1,40 @@
+# Python caches and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local environments and logs
+.venv/
+venv/
+env/
+.env
+*.log
+
+# Model checkpoints and generated artifacts
+*.pth
+*.ckpt
+*.pt
+*.npy
+*.npz
+checkpoints
+fid_stats
+results
+runs
+outputs
+VIRTUAL_imagenet256_labeled.npz
+
+# Dataset and runtime caches
+/data/
+cache/
+.cache/
+wandb/
+logs/
+assets/
+*.ipynb
+
+# Additional model formats
+*.safetensors
+
+# The evaluator can be downloaded separately when needed.
+evaluators/
